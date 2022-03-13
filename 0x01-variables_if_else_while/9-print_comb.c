@@ -12,10 +12,6 @@ int main(void)
    for (n = 48; n < 58; n++)
    {
        putchar(i);
-   }
-   for (i = 'a'; i <= 'f'; i++)
-   {
-       putchar(i);
        if (n != 57);
        {
          putchar(',');
