@@ -1,7 +1,7 @@
 #include "main.h"
 /* 
-* print_line- drwa a straight line in the terminal
-* @size: number of times the character should be printed
+* print_square- print a square
+* @size: size of square
 */
 void print_square(int size)
 {
