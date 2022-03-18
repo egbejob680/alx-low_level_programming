@@ -12,9 +12,9 @@ _putchar('\n');
 else
 {
 int i, j;
-for (i = ; i<=size; i++)
+for (i = 0; i<=size; i++)
 {
-for (j = ; j<=size; j++)
+for (j = 0; j<=size; j++)
 {
 _putchar('#');
 }
