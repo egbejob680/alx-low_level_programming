@@ -11,4 +11,5 @@ char *_strstr(char *haystack, char *needel);
 int compare(char *a, char *b);
 void set_string(char **, char *);
 void print_chessboard(char (*a)[8])
+void print_diagsums(int *a, int size)
 #endif
