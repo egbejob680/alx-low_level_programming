@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
 * leet- encode a string
 * @s: string to be encoded 

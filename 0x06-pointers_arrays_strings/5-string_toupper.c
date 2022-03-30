@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
 * string_toupper- change lower case letter to upper case
 * @s: string to modify
