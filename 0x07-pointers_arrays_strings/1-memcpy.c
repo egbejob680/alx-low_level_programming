@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* memcpy
+* _memcpy
 * @dest: 
 * @src:
 * @n:
