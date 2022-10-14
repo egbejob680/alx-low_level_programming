@@ -1,6 +1,4 @@
 #include<stdlib.h>
-#include "main.h"
-
 /**
  * main - prints all the alphabets in lowercase,
  * followed by a new line
