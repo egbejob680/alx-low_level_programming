@@ -1,17 +1,19 @@
 #include<stdlib.h>
 #include "main.h"
+
 /**
-* main - print all the alphabets in lowercase,
-* foolowed by a new line
-* Return always 0 (success)
-*/
+ * main - prints all the alphabets in lowercase,
+ * followed by a new line
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-   char j;
-   for (j = 'a'; j <= 'z'; j++)
-   {
-       _putchar(j);
-   }
-   putchar('\n');
-   return(0);
+char j;
+
+for (j = 'a'; j <= 'z'; j++)
+{
+putchar(j);
+}
+putchar('\n');
+return (0);
 }
