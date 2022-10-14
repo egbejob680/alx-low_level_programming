@@ -2,7 +2,6 @@
 #include<stdlib.h>
 #include<time.h>
 #include<stdlib.h>
-
 /**
 * main - assign a random number to int n
 * it executes the program and print n
@@ -11,7 +10,6 @@
 int main(void)
 {
     int n;
-
     srand(time(0));
     n = rand() - RAND_MAX / 2;
     if (n>0)
