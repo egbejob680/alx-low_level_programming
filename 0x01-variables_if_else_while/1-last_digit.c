@@ -3,7 +3,7 @@
 #include<stdio.h>
 
 /**
-* main - assign and print the last digit of a  random number 
+* main - assign random number to the variable n each time it is executed. 
 * Return always 0 (success)
 */
 int main(void)
