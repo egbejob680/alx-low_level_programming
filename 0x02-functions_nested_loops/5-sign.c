@@ -2,7 +2,7 @@
 /**
 * _islower -check for lower case character, followed by a new line
 * @n: the int to  checks
-* Return 1 and print + , 0 and print 0, -1 and print -
+* Return: 1 and print + , 0 and print 0, -1 and print -
 */
 int print_sign(int n)
 {
@@ -18,7 +18,7 @@ return (0);
 }
 else if(n < 0)
 {
-_putchar('-')
+_putchar('-');
 }
 return (-1);
 }
