@@ -3,7 +3,7 @@
 * print_line- drwa a straight line in the terminal
 * @n: number of times the character should be printed
 */
-void print_line(void)
+void print_line(n)
 {
 if (n <= 0)
 {
