@@ -9,8 +9,9 @@ int _atoi(char *s)
 {
 	int index = 0;
 	int n = 0;
+    int i;
 
-	if (contains_digit(s) == 0)
+	if (contain_digit(s) == 0)
 		return (0);
 
 
