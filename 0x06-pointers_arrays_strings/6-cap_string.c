@@ -1,28 +1,48 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
-* cap_string- capitalize every word of a string
-* @s: string to modify
-* 
-*/
-char *cap_string(char *)
+ * cap_string - capitalize all words of a string
+ * @str: string
+ * Return: modified string - str
+ */
+char *cap_string(char *str)
 {
-int i,j;
-char spe[13] = {'','\t', '\n', ',' ,';', '.', '!', '?','"','(',')','{','}' };
-for (i = 0; s[i] != '\0'; i++)
-{
-if ( i==0; && s[i] >='a' && s[i] <= 'z')
-s[i] = s[i]-32; 
-for (j=0; j<13; j++ )
-{
-if (s[i]==spe[j])
-{
-if (s[i+1] >='a' && s[i+1] <= 'z')
-{
-s[i+1] -= 32;
-}
-}
-} 
-}
-return (s);
+	int i = 0;
+	int wflag = 0;
+
+	while (str[i] != '\0')
+	{
+		if (i == 0)
+		{
+			if (str[i] >= 'a' && str[i] <= 'z')
+				str[i] = str[i] + 'A' - 'a';
+		}
+		if (str[i] == ',' || str[i] == '.' || str[i] == '(' ||
+			str[i] == ')' || str[i] == ';' || str[i] == '!' ||
+			str[i] == '\"' || str[i] == '?' || str[i] == '{' ||
+			str[i] == '}' || str[i] == ' ' || str[i] == '\n' ||
+			str[i] == '\t')
+		{
+			if (wflag == 0)
+				wflag = 1;
+			i++;
+			continue;
+		}
+		if (str[i] >= 'a' && str[i] <= 'z')
+		{
+			if (wflag == 1)
+			{
+				str[i] = str[i] + 'A' - 'a';
+				wflag = 0;
+			}
+		}
+		if (str[i] >= 'A' && str[i] <= 'Z')
+		{
+			if (wflag == 1)
+				wflag = 0;
+		}
+		wflag = 0;
+		i++;
+	}
+	return (str);
 }
